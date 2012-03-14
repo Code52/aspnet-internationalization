@@ -9,7 +9,7 @@ layout: default
 
 # Add i18n to your site layout (MVC4 Razor example)
 
-We are going to modify the vanilla ```_Layout.cshtml``` file that comes with MVC 4 for this example, so your experience may vary.
+We are going to modify the vanilla ```_Layout.cshtml``` file that comes with MVC 4 for this example, so what you see might be different but the steps are the same.
 
 ## Add the language selector
 
