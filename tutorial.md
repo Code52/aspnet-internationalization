@@ -17,15 +17,15 @@ In this tutorial we will
 
 1. Set up your project
 
-    a) Install the Code52 i18n package
+    a) [Install the Code52 i18n package](#add_the_code52i18n_nuget_package)
     
-    b) Create a language resource file
+    b) [Create a language resource file](#Create_a_language_resource_file)
     
-    c)  Setup the site template
+    c)  [Setup the site template](#Set_up_the_site_template)
     
-2. Localising text resources
+2. [Localising text resources](#Localising_Text_Resources)
 
-3. Making use of Language Resources
+3. [Language resources for testing](#Language_resources_for_testing)
 
 ### TL;DR; ? Cheat. use the sample package
 
@@ -46,7 +46,7 @@ From the package manager console you can type. If you don't have the package man
 	</div>
 </div>
 
-### Add a language resource file
+### Create a language resource file
 
 **Note:** If you already have a resource file that you want to use for your language text then feel free to skip this section.
 
@@ -58,7 +58,7 @@ For the purpose of this tutorial we will be creating the language resource file 
 
 ![](images/resourceaccess.png)
 
-## Add the language selector
+### Set up the site template
 
 Insert this statement into your layout file:
 
@@ -218,7 +218,7 @@ You reference entries through a statement like;
 
     alert(Code52.Language.Dictionary.Index_Title);
 
-### Testing language resources
+## Language resources for testing
 
 Knowing what text in a site has been localisation and what has not can become very tricky, very quickly. Believe me. So what can we do to help this ? Well it's really quite simple. We can utilise a very handy little utility called **Psuedoizer** to generate a 'mock' localised language resource for us. 
 
