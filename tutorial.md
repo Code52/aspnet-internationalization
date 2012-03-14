@@ -187,7 +187,7 @@ We will now discuss adding text entries into your resource files.
 
 When adding text entries into your resource file you should pay particular attention to providing some detailed information on what the text you are entering means, and in what context. Why? Well this information will help you and anyone who is translating the text into another language - and understanding the meaning and context of a word is important when it comes to translation.
 
-## Adding Resource Entries
+### Adding Resource Entries
 
 So let's add a new text entry called **Demonstration_Alert** into our language resource file.
 
@@ -217,6 +217,25 @@ Accessing your language entries from JavaScript is childsplay thanks to the */i1
 You reference entries through a statement like;
 
     alert(Code52.Language.Dictionary.Index_Title);
+
+## Adding other languages
+
+### Method 1 - Manual
+
+So you can create a specific language resource file by simply creating another resource file with the same name of your existing resource file + the ISO code of the culture you wish it to represent. For example. If your 'root' language resource file is called Language.resx. A french version would be called Language.fr.resx. 
+Further to this, if you want to further specify the language and culture of the resource, such as English (American) then you would call the resource file Language.en-US.resx.
+
+### Method 2 - Better :)
+
+The manual process is really quite painful. Thankfully there is a solution, and that is called [**Zeta Resource Editor**](http://www.zeta-resource-editor.com/index.html). This is a free application that frankly is a must have for anyone working on a localisation project.
+
+Instructions on how to use Zeta is a tutorial in it's own right, but for now it is suffice to say that you can create a project in Zeta (even import your Visual Studio solution). Specify what language your 'base' resource is, and then generate whatever languages you wish off the back of your base language resource - **most awesome indeed**
+
+### Demo
+
+So now that we have created another language file (in my case a French resource) using one of the two aforementioned methods, when we compile then view the web page we should see the following
+
+![](images/french-translated.png)
 
 ## Language resources for testing
 
