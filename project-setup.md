@@ -2,10 +2,10 @@
 layout: default
 ---
 
-&lt;div id="screenshot" style="float:right">
-	&lt;img src="logo-small.png" alt="{{ site.appname }}" />
-	&lt;div style="clear:both">&nbsp;&lt;/div>
-&lt;/div>
+<div id="screenshot" style="float:right">
+	<img src="logo-small.png" alt="{{ site.appname }}" />
+	<div style="clear:both">&nbsp;</div>
+</div>
 
 # Add i18n to your site layout (MVC4 Razor example)
 
@@ -33,29 +33,29 @@ This namespace contains the CultureHelper class which exposes a set of functiona
 
 To get the styles right for your language selector, add this CSS statement into the head of the layout page:
 
-    &lt;link href="@Url.Content("~/Content/Code52.i18n/Code52.i18n.css")" rel="stylesheet" type="text/css" /&gt;
+    <link href="@Url.Content("~/Content/Code52.i18n/Code52.i18n.css")" rel="stylesheet" type="text/css" />
 
 ![](images/stylesheet.png)
 
 ## Add the scripts
 
-Lastly, a series of scripts is required to manage the localization behaviour in the browser. Add this snippet to the bottom of your page, just inside the closing &lt;/body&gt; tag:
+Lastly, a series of scripts is required to manage the localization behaviour in the browser. Add this snippet to the bottom of your page, just inside the closing </body> tag:
 
-    &lt;script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.9/jquery.validate.min.js"&gt;&lt;/script&gt;
-    &lt;script type="text/javascript" src="@Url.Content("~/Scripts/jquery.globalize/globalize.js")"&gt;&lt;/script&gt;
-    &lt;script type="text/javascript" src="@Url.Content("~/Scripts/jquery.cookie.js")"&gt;&lt;/script&gt;
-    &lt;script type="text/javascript" 
-        src="@Url.Content(string.Format("~/Scripts/jquery.globalize/cultures/globalize.culture.{0}.js", CultureHelper.GetCurrentCulture()))"&gt;&lt;/script&gt;
+    <script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.9/jquery.validate.min.js"></script>
+    <script type="text/javascript" src="@Url.Content("~/Scripts/jquery.globalize/globalize.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/Scripts/jquery.cookie.js")"></script>
+    <script type="text/javascript" 
+        src="@Url.Content(string.Format("~/Scripts/jquery.globalize/cultures/globalize.culture.{0}.js", CultureHelper.GetCurrentCulture()))"></script>
     @if (CultureHelper.GetCurrentNeutralCulture() != "en")
     {
-	&lt;script type="text/javascript" 
-	    src="@String.Format("http://ajax.aspnetcdn.com/ajax/jquery.validate/1.9/localization/messages_{0}.js", CultureHelper.GetCurrentNeutralCulture())"&gt;&lt;/script&gt;    
+	<script type="text/javascript" 
+	    src="@String.Format("http://ajax.aspnetcdn.com/ajax/jquery.validate/1.9/localization/messages_{0}.js", CultureHelper.GetCurrentNeutralCulture())"></script>    
 	}
-    &lt;script type="text/javascript" src="@Url.Content("~/Scripts/Code52.i18n.js")"&gt;&lt;/script&gt;
-    &lt;script type="text/javascript" src="@Url.Content("/i18n/Code52.i18n.language.js")"&gt;&lt;/script&gt;
-    &lt;script type="text/javascript"&gt;
+    <script type="text/javascript" src="@Url.Content("~/Scripts/Code52.i18n.js")"></script>
+    <script type="text/javascript" src="@Url.Content("/i18n/Code52.i18n.language.js")"></script>
+    <script type="text/javascript">
         Code52.Language.Init('@CultureHelper.GetCurrentCulture()');    
-    &lt;/script&gt;
+    </script>
 
 ![](images/scripts.png)
 
