@@ -31,7 +31,7 @@ This namespace contains the CultureHelper class which exposes a set of functiona
 
 ## Add the stylesheet
 
-To get the styles right for your language selector, add this CSS statement into the head of the layout page:
+To get the styles right for your language selector, add this CSS statement inside the ```<head>``` node on the layout page:
 
     <link href="@Url.Content("~/Content/Code52.i18n/Code52.i18n.css")" rel="stylesheet" type="text/css" />
 
@@ -39,7 +39,9 @@ To get the styles right for your language selector, add this CSS statement into 
 
 ## Add the scripts
 
-Lastly, a series of scripts is required to manage the localization behaviour in the browser. Add this snippet to the bottom of your page, just inside the closing </body> tag:
+Finally, a set of JS files need to be referenced to manage the localization behaviour in the browser. 
+
+Add this snippet to the bottom of your page, just inside the closing ```</body>``` tag:
 
     <script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.9/jquery.validate.min.js"></script>
     <script type="text/javascript" src="@Url.Content("~/Scripts/jquery.globalize/globalize.js")"></script>
