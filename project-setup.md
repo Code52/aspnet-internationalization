@@ -7,9 +7,9 @@ layout: default
 	<div style="clear:both">&nbsp;</div>
 </div>
 
-# Add i18n to your site layout (MVC4 Razor example)
+# Add i18n to your site (Razor example)
 
-We are going to modify the vanilla ```_Layout.cshtml``` file that comes with MVC 4 for this example, so what you see might be different but the steps are the same.
+This guide modifies the vanilla ```_Layout.cshtml``` file that is created in MVC 4 - what you see might be different but the steps remain the same.
 
 ## Add the language selector
 
