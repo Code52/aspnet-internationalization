@@ -14,7 +14,6 @@
         <tags>localization globalization MVC MVC4 ASP.NET Web i18n l10n</tags>
         <dependencies>
             <dependency id="Code52.i18n.MVC4" />
-            <dependency id="jquery.cookie" />
             <dependency id="AspNetMvc" version="4.0" />
         </dependencies>
         <releaseNotes>Initial release</releaseNotes>
