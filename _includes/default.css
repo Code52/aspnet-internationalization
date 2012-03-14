@@ -34,7 +34,7 @@ img { border: none;}
 
 .accent { color: #{{site.accent}};}
 .feature { float:left; width: 245px; margin-right:50px;}
-.feature h2 { font-size: 1.15em; margin-top:0px; margin-bottom:0px;}
+.feature h2 { font-size: 1.15em; margin-top:0px; margin-bottom:5px;}
 .twitter-share-button {margin-top:50px;}
 
 @media screen and (max-width:900px)

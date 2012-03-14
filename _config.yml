@@ -12,4 +12,4 @@ feature3title: 'For all types* of ASP.NET apps '
 
 feature1desc: 'Leverage .NET on the server and jQuery.globalize on the client to manage your resources'
 feature2desc: 'Model validation errors using resources, browser detection of the user''s locale, overriding the defaults using a cookie - no manual setup required'
-feature3desc: 'Supports ASP.NET MVC3 and MVC4 (Razor only) but expanding out to other projects over time'
+feature3desc: 'Packages for ASP.NET MVC3 and MVC4 (Razor only) but more coming soon'
