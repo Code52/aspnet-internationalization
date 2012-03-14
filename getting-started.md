@@ -51,6 +51,6 @@ or
 
 # Getting all set up
 
-After the you have installed the package, [this guide](project-setup.html) demonstrates how to integrate the package into a site layout.
+After the you have installed the package, [this guide](tutorial.html) demonstrates how to integrate the package into a site layout.
 
 The steps are also included in the **App_Readme\Code52.i18n.MVC.readme.txt** file in the NuGet packages.
