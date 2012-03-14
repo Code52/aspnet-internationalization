@@ -25,10 +25,6 @@ Create an **empty** MVC project and install one of these packages:
 		<p class="nuget-button-command">PM&gt; Install-Package <a href="http://nuget.org/List/Packages/Code52.i18n.MVC3.Sample.Razor">Code52.i18n.MVC3.Sample.Razor</a></p></div></div>
 </div>
 
-After the setup finishes, [this guide](project-setup.html) demonstrates how to integrate the package into a site layout.
-
-The steps are also included in the **App_Readme\Code52.i18n.MVC.readme.txt** file in the NuGet packages.
-
 ## Add to an existing project
 
 If you are familiar enough with how resources and cultures work in .NET, install one of these packages and experiment with wiring up the components yourself:
@@ -49,4 +45,8 @@ If you are familiar enough with how resources and cultures work in .NET, install
 	</div>
 </div>
 
-More details coming soon.
+# Setup
+
+After the you have installed the package, [this guide](project-setup.html) demonstrates how to integrate the package into a site layout.
+
+The steps are also included in the **App_Readme\Code52.i18n.MVC.readme.txt** file in the NuGet packages.
