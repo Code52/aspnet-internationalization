@@ -3,6 +3,7 @@
     <PropertyGroup>
         <ArtifactDirectory Condition="'$(ArtifactDirectory)'==''"></ArtifactDirectory>
         <ProjectRoot Condition="'$(ProjectRoot)'==''">.\</ProjectRoot>
+		<Configuration Condition="'$(Configuration)'==''">Debug</Configuration>
     </PropertyGroup>
 
     <Target Name="Init">
@@ -11,7 +12,7 @@
         <MakeDir Directories="$(ArtifactDirectory)" Condition="!Exists($(ArtifactDirectory))"/>
     </Target>
 
-    <Target Name="BuildTestResourceFile" Condition="'$(Configuration)'=='Debug'" >
+    <Target Name="BuildTestResourceFile">
         <Message Text=" ===========Preparing language resource files===========" Importance="High" />
         <CreateItem Include='$(ProjectRoot)'>
             <Output ItemName='ProjectRootPath' TaskParameter='Include' />

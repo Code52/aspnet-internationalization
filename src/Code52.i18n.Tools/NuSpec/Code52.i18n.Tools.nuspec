@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+    <metadata>
+        <version>0.1</version>
+        <authors>shiftkey,davidchristiansen</authors>
+        <owners>shiftkey,davidchristiansen</owners>
+        <projectUrl>http://code52.org/aspnet-internationalization</projectUrl>
+        <iconUrl>http://code52.org/aspnet-internationalization/icon.png</iconUrl>
+        <id>Code52.i18n.Tools</id>
+        <title>ASP.NET Internationalisation (i18n) MSBuild Tasks</title>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <description>Part of a package to making i18n easy for ASP.NET devs</description>
+        <summary />
+        <dependencies>
+            <dependency id="NuGetPowerTools" version="0.26" />
+        </dependencies>
+        <releaseNotes>Initial release</releaseNotes>
+        <tags>localization globalization MVC MVC3 ASP.NET Web i18n l10n</tags>
+    </metadata>
+    <files>
+        <file src="..\bin\Release\*.dll" target="tools" />
+        <file src="Tools\init.ps1" target="tools\init.ps1" />
+    </files>
+</package>
