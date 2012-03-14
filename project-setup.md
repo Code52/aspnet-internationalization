@@ -61,19 +61,17 @@ Add this snippet to the bottom of your page, just inside the closing ```</body>`
 
 ![](images/scripts.png)
 
-And that's it.
-
 ## Press F5
 
 Run up the application and you should see something relatively simple.
 
 ![](images/f5.png)
 
-Click on the language in the top-left to view the languages available for the site.
+Clicking on the language in the top-left will slide down the languages selection control - containing the languages supported by the site.
 
 ![](images/select.png)
 
-Click on a language to select it. This will reload the browser and change the culture for the application.
+Click a language to select it. This will reload the browser and change the culture for the application.
 
 ![](images/french.png)
 
