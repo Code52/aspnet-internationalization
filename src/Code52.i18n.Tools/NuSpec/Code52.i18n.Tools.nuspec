@@ -7,10 +7,10 @@
         <projectUrl>http://code52.org/aspnet-internationalization</projectUrl>
         <iconUrl>http://code52.org/aspnet-internationalization/icon.png</iconUrl>
         <id>Code52.i18n.Tools</id>
-        <title>ASP.NET Internationalisation (i18n) MSBuild Tasks</title>
+        <title>ASP.NET Internationalisation (i18n) Tools</title>
         <requireLicenseAcceptance>false</requireLicenseAcceptance>
         <description>Part of a package to making i18n easy for ASP.NET devs</description>
-        <summary />
+        <summary>Installs a MSBuild task and a powershell commandlet to support the localisation of resource files</summary>
         <dependencies>
             <dependency id="NuGetPowerTools" version="0.26" />
         </dependencies>

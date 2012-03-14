@@ -58,14 +58,11 @@
   <ItemGroup>
     <None Include="NuSpec\Content\App_Readme\Code52.i18n.MVC.readme.txt.pp" />
     <Content Include="NuSpec\Content\Content\code52.i18n\Code52.i18n.css" />
-    <Content Include="NuSpec\Content\Content\code52.i18n\images\bg_regions_international_tile.png" />
     <Content Include="NuSpec\Content\Content\code52.i18n\images\flags\de.png" />
     <Content Include="NuSpec\Content\Content\code52.i18n\images\flags\es.png" />
     <Content Include="NuSpec\Content\Content\code52.i18n\images\flags\fr.png" />
     <Content Include="NuSpec\Content\Content\code52.i18n\images\flags\gb.png" />
     <Content Include="NuSpec\Content\Content\code52.i18n\images\flags\it.png" />
-    <Content Include="NuSpec\Content\Content\code52.i18n\images\icon_international_map.png" />
-    <Content Include="NuSpec\Content\Content\code52.i18n\images\WorldHeader.png" />
     <Content Include="NuSpec\Content\Scripts\Code52.i18n.js" />
   </ItemGroup>
   <ItemGroup>

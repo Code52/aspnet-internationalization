@@ -50,7 +50,6 @@
     <Compile Include="Psuedoizer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="PsuedoizerCmdlet.cs" />
-    <Compile Include="PsuedoizerTask.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="NuSpec\Code52.i18n.Tools.nuspec">
