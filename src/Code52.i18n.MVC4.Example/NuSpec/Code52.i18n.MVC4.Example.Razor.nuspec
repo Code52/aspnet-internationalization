@@ -4,11 +4,11 @@
         <id>Code52.i18n.MVC4.Sample.Razor</id>
         <version>0.1</version>
         <title>ASP.NET Internationalisation (i18n) Sample for MVC4 </title>
-        <authors>bforster, dchristiansen</authors>
-        <owners>bforster, dchristiansen</owners>
+        <authors>shiftkey,davidchristiansen</authors>
+        <owners>shiftkey,davidchristiansen</owners>
+        <projectUrl>http://code52.org/aspnet-internationalization</projectUrl>
+        <iconUrl>http://code52.org/aspnet-internationalization/icon.png</iconUrl>
         <requireLicenseAcceptance>false</requireLicenseAcceptance>
-        <projectUrl>http://code52.org/internationalization-mvc4</projectUrl>
-        <iconUrl>https://github.com/DavidChristiansen/internationalization-mvc4/raw/master/docs/logo/ProjectIcon.png</iconUrl>
         <description>Sample implementation of i18n package</description>
         <summary>A sample implementation of the [Code52] ASP.NET Internationalisation (i18n) package for MVC4</summary>
         <tags>localization globalization MVC MVC4 ASP.NET Web i18n l10n</tags>
