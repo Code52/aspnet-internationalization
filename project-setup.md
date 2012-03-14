@@ -28,7 +28,17 @@ From the package manager console you can type. If you don't have the package man
 	</div>
 </div>
 
-##
+## Add a language resource file
+
+**Note:** If you already have a resource file that you want to use for your language text then feel free to skip this section.
+
+Add a new resource file to host your language text. We would recommend creating a resource file specifically for the purpose of languages.
+
+![](images/newresourcefile.png)
+
+For the purpose of this tutorial we will be creating the language resource file within the web project. This however does not have to be the case. If you create the resource in a project other than the one that hosts your controllers then just be sure to set the resource access modifier to public.
+
+![](images/resourceaccess.png)
 
 ## Add the language selector
 
