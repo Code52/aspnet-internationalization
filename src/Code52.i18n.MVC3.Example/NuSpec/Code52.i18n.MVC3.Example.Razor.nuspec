@@ -14,7 +14,6 @@
         <tags>localization globalization MVC MVC3 ASP.NET Web i18n l10n</tags>
         <dependencies>
             <dependency id="Code52.i18n.MVC3" />
-            <dependency id="jquery.cookie" />
         </dependencies>
         <releaseNotes>Initial release</releaseNotes>
     </metadata>

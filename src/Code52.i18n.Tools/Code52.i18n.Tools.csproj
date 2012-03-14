@@ -5,15 +5,13 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{EFA9A1CD-06FF-41EC-9B2B-BA5EE890D2A5}</ProjectGuid>
+    <ProjectGuid>{142D7F74-595E-4CDA-AF8C-AFA6B3C94B50}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Code52.i18n.MVC</RootNamespace>
-    <AssemblyName>Code52.i18n.MVC</AssemblyName>
+    <RootNamespace>Code52.i18n.Tools</RootNamespace>
+    <AssemblyName>Code52.i18n.Tools</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
-    <RestorePackages>true</RestorePackages>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -33,42 +31,31 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.Build.Framework" />
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Management.Automation, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\lib\System.Management.Automation.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
-    <Reference Include="System.Drawing" />
-    <Reference Include="System.Web" />
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="NuSpec\Code52.i18n.MVC4.nuspec" />
-    <None Include="NuSpec\Content\App_Start\AppStart_Code52_i18n.cs.pp" />
+    <Compile Include="Psuedoizer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <None Include="NuSpec\Content\Code52.i18n\CultureHelper.cs.pp" />
-    <None Include="NuSpec\Content\Code52.i18n\LanguageFilterAttribute.cs.pp" />
-    <None Include="NuSpec\Content\Code52.i18n\LocalizationHelpers.cs.pp" />
-    <None Include="NuSpec\Content\Controllers\LanguageController.cs.pp" />
-    <Content Include="NuSpec\Content\Views\Shared\LanguageSelection.ascx" />
-    <None Include="NuSpec\Content\web.config.transform">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="NuSpec\tools\install.ps1" />
-  </ItemGroup>
-  <ItemGroup />
-  <ItemGroup>
-    <None Include="NuSpec\Content\App_Readme\Code52.i18n.MVC.readme.txt.pp" />
-    <Content Include="NuSpec\Content\Content\code52.i18n\Code52.i18n.css" />
-    <Content Include="NuSpec\Content\Content\code52.i18n\images\flags\de.png" />
-    <Content Include="NuSpec\Content\Content\code52.i18n\images\flags\es.png" />
-    <Content Include="NuSpec\Content\Content\code52.i18n\images\flags\fr.png" />
-    <Content Include="NuSpec\Content\Content\code52.i18n\images\flags\gb.png" />
-    <Content Include="NuSpec\Content\Content\code52.i18n\images\flags\it.png" />
-    <Content Include="NuSpec\Content\Scripts\Code52.i18n.js" />
+    <Compile Include="PsuedoizerCmdlet.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="NuSpec\Code52.i18n.MVC3.nuspec">
+    <None Include="NuSpec\Code52.i18n.Tools.nuspec">
       <SubType>Designer</SubType>
     </None>
+    <None Include="NuSpec\tools\init.ps1" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
