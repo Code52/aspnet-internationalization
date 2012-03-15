@@ -19,13 +19,13 @@ In this tutorial we will
 
     a) [Install the Code52 i18n package](#add_the_code52i18n_nuget_package)
     
-    b) [Create a language resource file](#Create_a_language_resource_file)
+    b) [Create a language resource file](#create_a_language_resource_file)
     
-    c)  [Setup the site template](#Set_up_the_site_template)
+    c)  [Setup the site template](#set_up_the_site_template)
     
-2. [Localising text resources](#Localising_Text_Resources)
+2. [Localising text resources](#localising_text_resources)
 
-3. [Language resources for testing](#Language_resources_for_testing)
+3. [Language resources for testing](#language_resources_for_testing)
 
 ### TL;DR; ? Cheat. use the sample package
 
