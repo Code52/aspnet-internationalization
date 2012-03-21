@@ -19,7 +19,7 @@
             return GetDefaultCulture(); // return Default culture
           if (_getImplementedCultureCache.ContainsKey(name))
             return _getImplementedCultureCache[name];   // we have worked this out before and cached the result. Send it back.
-          if (_cultures.Count(c => c.Equals(name, StringComparison.InvariantCultureIgnoreCase)) > 0)
+          if (_cultures.Any(c => c.Equals(name, StringComparison.InvariantCultureIgnoreCase)))
             return CacheCulture(name, name); // accept it
           var n = GetNeutralCulture(name);
           foreach (var c in _cultures)
