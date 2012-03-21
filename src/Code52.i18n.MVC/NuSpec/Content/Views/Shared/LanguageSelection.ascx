@@ -17,12 +17,12 @@
                     </li>
                     <li class="lang">
                         <div class="language language_FR">
-                            <a title="français" href="#" class="fr-FR" href="#">Français</a>
+                            <a title="français" class="fr-FR" href="#">Français</a>
                         </div>
                     </li>
                     <li class="lang">
                         <div class="language language_FR">
-                            <a title="français" href="#" class="pl-PL" href="#">Polish</a>
+                            <a title="français" class="pl-PL" href="#">Polish</a>
                         </div>
                     </li>
                 </ol>
