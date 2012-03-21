@@ -1,72 +1,16 @@
-﻿
-
-#languageselection
-{
-}
-#languages
-{
-	margin-top: 5px;
-	display: none;
-	padding-top: 10px;
-	padding-left: 10px;
-	padding-right: 10px;
-	height: 40px;
-	background-color: #efefef;
-}
-#languages h4
-{
-	letter-spacing: normal;
-	font-size: 11px;
-	text-transform: capitalize;
-	font-weight: bold;
-	color: #606060;
-	margin-top: -7px;
-}
-#languages UL
-{
-	margin-left: -40px;
-	list-style: none;
-	display: block;
-	padding-top: 5px;
-}
-#languages LI
-{
-	float: left;
-	border-right: 1px dotted #cecece;
-	padding-right: 5px;
-	margin-right: 5px;
-	margin-top: -16px;
-}
-#languages LI:last-child
-{
-	border-right: none;
-}
-.language
+﻿.language
 {
 	padding-bottom: 2px;
-	background-position: left;
+	background-position: left 7px;
 	background-repeat: no-repeat;
 	margin-left: 5px;
 	padding-left: 20px;
 	text-align: left;
 }
-#currentlanguageSelection
-{
-	margin-left: 15px;
-}
 .language A
 {
 	line-height: 10px;
 	font-size: 12px;
-}
-#currentlanguage
-{
-	padding: 5px;
-}
-#currentlanguageSelection_icon
-{
-	float: left;
-	margin-top: 2px;
 }
 #i18n-options-container
 {
@@ -76,24 +20,17 @@
 #i18n-options
 {
 	z-index: 1000;
-    text-align: right;
-    font-size: 75%;
-    padding: 10px;
+	text-align: right;
+	font-size: 75%;
+	padding: 10px;
 }
 #i18n-regions
 {
 	height: 30px;
 	margin: 0 auto;
 	position: relative;
-    padding: 10px;
+	padding: 10px;
 	display: none;
-}
-#i18n-regions h4
-{
-	height: 25px;
-	position: absolute;
-	top: 15px;
-	width: 160px;
 }
 #i18n-regions ul
 {
@@ -131,22 +68,6 @@
 	padding: 0;
 	text-transform: none;
 	white-space: nowrap;
-}
-.language
-{
-	background-position: left 7px;
-	background-repeat: no-repeat;
-	margin-left: 5px;
-	padding-left: 20px;
-	text-align: left;
-}
-#currentlanguageSelection
-{
-	margin-left: 15px;
-}
-.language A
-{
-	line-height: 10px;
 }
 .language_EN
 {
