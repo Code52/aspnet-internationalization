@@ -48,7 +48,7 @@
         },
         Init: function (culture) {
             Globalize.culture(culture);
-            instance = new i18n();
+            window.Code52.Language.instance = new i18n();
         }
     };
 })(window);
