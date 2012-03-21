@@ -10,43 +10,7 @@
 
     [OutputCache(Duration = 60, VaryByCustom = "culture")]
     public class LanguageController : Controller 
-	{
-		public RedirectResult Change(string customer, string token, string language)
-        {
-            if (string.IsNullOrWhiteSpace(language))
-                Response.Redirect("/", true);
-            if (!string.IsNullOrWhiteSpace(language))
-            {
-                switch (language.ToLower())
-                {
-                    case "fr":
-                        SetCulture("fr");
-                        break;
-                    case "pl":
-                        SetCulture("pl");
-                        break;
-                    case "en-US":
-                        SetCulture("en-US");
-                        break;
-                    default:
-                        SetCulture("en-GB");
-                        break;
-                }
-            }
-            return new RedirectResult(string.Format("/{0}/{1}/verify", customer, token));
-        }
-
-        protected void SetCulture(string name)
-        {
-            var cultureCookie = Request.Cookies["_culture"] ?? new HttpCookie("_culture");
-            cultureCookie.Value = name;
-            // NOTE: you should specify the domain for the cookie.
-            // cultureCookie.Domain = Request.Url.Host;
-            cultureCookie.Expires = DateTime.Now.AddYears(1);
-            cultureCookie.Path = "/";
-            Response.Cookies.Add(cultureCookie);
-        }
-
+    {
         public JavaScriptResult Language()
         {
             return GetResourceScript(Resources.Language.ResourceManager);
