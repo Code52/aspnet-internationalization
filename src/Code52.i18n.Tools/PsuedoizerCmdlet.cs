@@ -48,7 +48,14 @@ namespace Code52.i18n
 
         private string Resolve(string relativePath)
         {
-            return Path.Combine(SessionState.Path.CurrentFileSystemLocation.Path, relativePath);
+            var currentPath = SessionState.Path.CurrentFileSystemLocation.Path;
+
+            if (relativePath.StartsWith(@".\"))
+            {
+                relativePath = relativePath.Substring(2);
+            }
+
+            return Path.Combine(currentPath, relativePath);
         }
     }
 }
