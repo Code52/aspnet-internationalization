@@ -55,6 +55,5 @@
 
             return name.Substring(0, 2); // Read first two chars only. E.g. "en", "es"
         }
-
     }
 }
