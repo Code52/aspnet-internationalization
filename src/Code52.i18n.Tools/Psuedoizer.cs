@@ -17,10 +17,11 @@ namespace Code52.i18n {
         /// The main entry point for the application.
         /// </summary>
         public void Run(string fileName, string fileSaveName) {
-            // Open the input file.
-            ResXResourceReader reader = new ResXResourceReader(fileName);
-
+            
             try {
+                // Open the input file.
+                ResXResourceReader reader = new ResXResourceReader(fileName);
+
                 // Get the enumerator.  If this throws an ArguementException
                 // it means the file is not a .RESX file.
                 IDictionaryEnumerator enumerator = reader.GetEnumerator();
