@@ -1,11 +1,8 @@
-using System;
 using System.IO;
+using System.Management.Automation;
 
 namespace Code52.i18n
 {
-    using System.Management.Automation;
-    using Microsoft.PowerShell.Commands;
-
     [Cmdlet("Code52", "Psuedoizer")]
     public class PsuedoizerCmdlet : PSCmdlet
     {
