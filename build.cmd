@@ -4,11 +4,11 @@ SET NUGET=build\nuget.exe
 
 set config=%1
 if "%config%" == "" (
-   set config=Debug
+   set config=Release
 )
 set version=%2
 if "%version%" == "" (
-   set version=0.1.12
+   set version=0.2.999
 )
 
 %WINDIR%\Microsoft.NET\Framework\v4.0.30319\msbuild build.proj /p:Configuration="%config%" /m /v:M /fl /flp:LogFile=msbuild.log;Verbosity=Normal /nr:false

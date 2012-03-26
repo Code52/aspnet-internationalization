@@ -16,3 +16,4 @@ post-build*
 _ReSharper.*
 deploy-to-ec2*
 src/Code52.i18n.MVC4.Sample.CSharp/Scripts/jquery.globalize/*
+*ncrunch*
