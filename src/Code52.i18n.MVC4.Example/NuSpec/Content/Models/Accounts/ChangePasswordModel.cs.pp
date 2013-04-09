@@ -1,5 +1,5 @@
 using System.ComponentModel.DataAnnotations;
-using System.Web.Mvc;
+using CompareAttribute = System.Web.Mvc.CompareAttribute;
 
 namespace $rootnamespace$.Models.Accounts
 {
