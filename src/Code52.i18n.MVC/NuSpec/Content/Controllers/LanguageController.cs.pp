@@ -1,8 +1,8 @@
 ﻿namespace $rootnamespace$.Controllers 
 {
-    using System;
     using System.Collections;
     using System.Globalization;
+    using System.Linq;
     using System.Resources;
     using System.Text;
     using System.Web;
