@@ -8,7 +8,7 @@
         <iconUrl>http://code52.org/aspnet-internationalization/icon.png</iconUrl>
         <dependencies>
             <dependency id="AntiXSS" version="4.2.1" />
-            <dependency id="jquery-globalize" version="[0.1.0]" />
+            <dependency id="jquery-globalize" version="0.1.0" />
             <dependency id="jquery.cookie" />
             <dependency id="ModelMetadataExtensionsWithBugfix" version="0.1.2" />
             <dependency id="WebActivator" version="1.5" />
