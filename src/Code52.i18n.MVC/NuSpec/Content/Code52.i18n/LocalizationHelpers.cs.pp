@@ -7,7 +7,7 @@ namespace $rootnamespace$.Code52.i18n
     public static class LocalizationHelpers {
         public static IHtmlString MetaAcceptLanguage<T>(this HtmlHelper<T> html) {
             var acceptLanguage = HttpUtility.HtmlAttributeEncode(System.Threading.Thread.CurrentThread.CurrentUICulture.ToString());
-            return new HtmlString(String.Format("<meta name=\"accept-language=\" content=\"{0}\">", acceptLanguage));
+            return new HtmlString(String.Format("<meta name=\"accept-language\" content=\"{0}\">", acceptLanguage));
         }
     }
 }

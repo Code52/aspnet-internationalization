@@ -44,7 +44,7 @@
                 sb.AppendFormat("\"{0}\":\"{1}\",", dictionaryEntry.Key, Microsoft.Security.Application.Encoder.JavaScriptEncode(value.Replace("\"", "\\\"").Replace('{', '[').Replace('}', ']'), false));
             }
             string script = sb.ToString();
-            if (!string.IsNullOrEmpty(script))
+            if (!string.IsNullOrEmpty(script) && script.Last() != '{')
             {
                 script = script.Remove(script.Length - 1);
             }
